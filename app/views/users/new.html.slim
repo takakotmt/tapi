@@ -1,0 +1,12 @@
+h1 新規登録
+.row
+  .col-md-6.offset-md-3
+    = form_for(@user) do |f|
+      = f.label :email
+      = f.email_field :email, class: 'form-control'
+      = f.label :password
+      = f.password_field :password, class: 'form-control'
+      = f.label :name
+      = f.text_field :name, class: 'form-control'
+      = f.submit class: "btn btn-primary"
+    = link_to "ログイン", login_path, class: 'col-md-6 offset-md-3'
