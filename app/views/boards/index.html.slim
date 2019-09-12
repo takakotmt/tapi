@@ -5,9 +5,8 @@ h1 たぴたぴ
       .form-group
         = f.label :body
         = f.text_area(:body, class: "form-control", row: 3, style: "height:30px;")
-        / .form-group
-          /   = f.label :image
-          /   = f.file_field :image, id: 'file-sample', accept: 'image/*'
-          /   = image_tag board.image.url , id: 'file-preview', class: "rounded-circle", size: "75x75"
+        .form-group
+          = f.label :image
+          = f.file_field :image, id: 'file-sample', accept: 'image/*'
         = f.submit '更新', class: "btn btn-primary"
 =  render @boards
