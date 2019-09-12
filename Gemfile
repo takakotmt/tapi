@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 #追加
 gem 'sorcery'
 gem 'slim-rails'
+gem 'carrierwave'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
