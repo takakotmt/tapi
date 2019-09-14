@@ -32,8 +32,6 @@ class BoardsController < ApplicationController
   private
 
   def board_params
-    puts "sssss"
     params.require(:board).permit(:body, :image)
   end
-
 end
