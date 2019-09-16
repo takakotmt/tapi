@@ -35,6 +35,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'sorcery'
 gem 'slim-rails'
 gem 'carrierwave'
+gem 'gmaps4rails'
+
+#Debugger
+gem 'binding_of_caller'
+gem 'byebug'
+gem 'pry'
+gem 'pry-byebug'
+gem 'pry-doc'
+gem 'pry-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

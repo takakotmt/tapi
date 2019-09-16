@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users, only: [:create]
-  resources :boards
+  resources :boards, only: [:index,:new, :create, :show]
   get 'top/index'
   get '/signup', to: 'users#new'
   get '/login', to: 'user_sessions#new'
