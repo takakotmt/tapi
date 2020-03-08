@@ -5,9 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.7'
+gem 'rails', '~> 5.2.3'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
@@ -34,6 +35,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'sorcery'
 gem 'slim-rails'
 gem 'carrierwave'
+gem 'gmaps4rails'
+
+#Debugger
+gem 'binding_of_caller'
+gem 'byebug'
+gem 'pry'
+gem 'pry-byebug'
+gem 'pry-doc'
+gem 'pry-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

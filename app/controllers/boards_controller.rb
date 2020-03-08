@@ -1,16 +1,15 @@
 class BoardsController < ApplicationController
   def index
     @boards = Board.all
-  end
-
-  def new
-   @board = Board.new
+    @board = Board.new
   end
 
   def create
-    @board = Board.create(board_params)
+    @board = current_user.boards.build(board_params)
     if @board.save
       redirect_to boards_path
+    else
+      render :index
     end
   end
 
@@ -18,19 +17,9 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:id])
   end
 
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-
   private
 
   def board_params
-    params.require(:board).permit(:body)
+    params.require(:board).permit(:body, :image)
   end
-
 end
